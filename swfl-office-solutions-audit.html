@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Digital Health and Performance Assessment for SWFL Office Solutions — site audit, keyword analysis, and recommended SEO solution.">
+<meta property="og:title" content="SWFL Office Solutions — Digital Health and Performance Assessment">
+<meta property="og:description" content="Comprehensive SEO audit, competitor gap analysis, and recommended solution prepared by Abstrakt Marketing Group.">
+<meta property="og:type" content="article">
+<title>SWFL Office Solutions — Digital Health and Performance Assessment</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --maroon: #7B1818;
+  --maroon-dark: #5A1010;
+  --maroon-light: #A83030;
+  --cream: #FAF7F2;
+  --white: #FFFFFF;
+  --charcoal: #1A1A1A;
+  --text: #2D2D2D;
+  --muted: #8A8A8A;
+  --light-gray: #F0EDEA;
+  --border: #E5E0DB;
+  --green: #1B7A3D;
+  --green-light: #E8F5E9;
+  --red: #C41E1E;
+  --red-light: #FFEBEE;
+  --amber: #D4920A;
+  --amber-light: #FFF8E1;
+  --blue: #1557B0;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cover {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  overflow: hidden;
+}
+.cover-left {
+  background: linear-gradient(160deg, var(--maroon) 0%, var(--maroon-dark) 100%);
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.cover-left .cover-logo { flex-shrink: 0; }
+.cover-left .cover-content { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.5rem 0; }
+.cover-left .cover-footer { flex-shrink: 0; }
+.cover-left::before {
+  content: '';
+  position: absolute;
+  top: -20%; right: -30%;
+  width: 80%; height: 80%;
+  background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.cover-left::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+}
+.cover-badge {
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em;
+  text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 0.75rem;
+}
+.cover-title {
+  font-size: 3.2rem; font-weight: 800; color: var(--white);
+  line-height: 1.1; margin-bottom: 0; letter-spacing: -0.02em;
+}
+.cover-title span {
+  display: block; font-weight: 300; font-size: 0.95rem;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  margin-top: 1.25rem; color: rgba(255,255,255,0.5);
+}
+.cover-divider { width: 64px; height: 3px; background: rgba(255,255,255,0.35); margin: 0 0 1rem 0; }
+.cover-client { font-size: 1.2rem; font-weight: 500; color: var(--white); }
+.cover-url { font-size: 0.85rem; color: rgba(255,255,255,0.4); margin-top: 0.2rem; }
+.cover-right {
+  padding: 2.5rem 2.25rem;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: stretch;
+  gap: 1rem; min-width: 0;
+}
+.cover-right > .summary-card { width: 100%; }
+.cover-right .summary-card { padding: 1.25rem 1.5rem; }
+.cover-right .summary-card h3 { margin-bottom: 0.85rem; }
+
+.audit-grid {
+  display: grid; grid-template-columns: auto 1fr auto 1fr;
+  column-gap: 1.25rem; row-gap: 0.55rem;
+  font-size: 0.85rem; align-items: baseline;
+}
+.audit-grid .ag-label { font-weight: 600; color: var(--text); white-space: nowrap; }
+.audit-grid .ag-value { font-weight: 800; color: var(--text); white-space: nowrap; }
+.audit-grid .ag-value.accent { color: var(--red); }
+.audit-grid .ag-value.warn { color: var(--amber); }
+
+.cover-right .opportunity-list li { font-size: 0.82rem; padding-left: 1.1rem; }
+
+.comp-body { display: grid; grid-template-columns: 132px 1fr; gap: 1rem; align-items: center; }
+.comp-pie { width: 132px; height: 132px; }
+.comp-pie .pie-label {
+  font-size: 4.2px; font-weight: 800; fill: #fff;
+  text-anchor: middle; dominant-baseline: central; font-family: inherit;
+}
+.comp-legend {
+  display: grid; grid-template-columns: auto auto;
+  column-gap: 1.25rem; row-gap: 0.35rem;
+  font-size: 0.82rem; align-items: center; justify-content: start;
+}
+.comp-legend .cl-name { font-weight: 700; }
+.comp-legend .cl-pct { color: var(--muted); font-weight: 600; }
+
+.summary-card {
+  background: var(--white); border-radius: 12px;
+  padding: 1.5rem; border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.summary-card h3 {
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--maroon); margin-bottom: 1rem;
+}
+
+.opportunity-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.opportunity-list li {
+  font-size: 0.85rem; color: var(--text);
+  padding-left: 1.2rem; position: relative;
+}
+.opportunity-list li::before {
+  content: '→'; position: absolute; left: 0;
+  color: var(--maroon); font-weight: 700;
+}
+
+section { padding: 4rem 3rem; max-width: 1300px; margin: 0 auto; }
+.section-header {
+  display: flex; align-items: center; gap: 1rem;
+  margin-bottom: 2.5rem; padding-bottom: 1rem;
+  border-bottom: 2px solid var(--maroon);
+}
+.section-number {
+  width: 36px; height: 36px; background: var(--maroon);
+  color: var(--white); font-weight: 800; font-size: 0.85rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 6px; flex-shrink: 0;
+}
+.section-title { font-size: 1.6rem; font-weight: 800; color: var(--charcoal); letter-spacing: -0.01em; }
+
+.card-grid { display: grid; gap: 1rem; }
+.card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.card-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.card-grid.cols-2-1 { grid-template-columns: 2fr 1fr; }
+.card-grid.cols-1-2 { grid-template-columns: 1fr 2fr; }
+
+.card {
+  background: var(--white); border-radius: 10px;
+  padding: 1.5rem; border: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+  position: relative; overflow: hidden;
+}
+.card.span-2 { grid-column: span 2; }
+.card.span-3 { grid-column: span 3; }
+.card.span-4 { grid-column: span 4; }
+
+.card-label {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--muted);
+  margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem;
+}
+.card-label .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.dot.green { background: var(--green); }
+.dot.red { background: var(--red); }
+.dot.amber { background: var(--amber); }
+.dot.blue { background: var(--blue); }
+
+.big-stat { font-size: 2.8rem; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+.big-stat.sm { font-size: 2rem; }
+.big-stat + .stat-sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+.big-stat.danger { color: var(--red); }
+.big-stat.warning { color: var(--amber); }
+.big-stat.success { color: var(--green); }
+.big-stat.neutral { color: var(--charcoal); }
+
+.badge {
+  display: inline-block; font-size: 0.7rem; font-weight: 600;
+  padding: 0.15rem 0.5rem; border-radius: 4px; letter-spacing: 0.03em;
+}
+.badge.green { background: var(--green-light); color: var(--green); }
+.badge.red { background: var(--red-light); color: var(--red); }
+.badge.amber { background: var(--amber-light); color: var(--amber); }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+table th {
+  background: var(--maroon); color: var(--white);
+  font-weight: 600; font-size: 0.7rem; letter-spacing: 0.06em;
+  text-transform: uppercase; padding: 0.6rem 0.75rem; text-align: left;
+}
+table td { padding: 0.55rem 0.75rem; border-bottom: 1px solid var(--border); color: var(--text); }
+table tr:nth-child(even) td { background: var(--light-gray); }
+table tr.highlight td { background: #FFF3F3; font-weight: 600; color: var(--maroon); }
+
+.issue-item {
+  display: flex; align-items: flex-start; gap: 0.5rem;
+  padding: 0.5rem 0; font-size: 0.82rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+.issue-item:last-child { border-bottom: none; }
+.issue-icon {
+  width: 18px; height: 18px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.6rem; font-weight: 800; color: var(--white); margin-top: 1px;
+}
+.issue-icon.error { background: var(--red); }
+.issue-icon.warn { background: var(--amber); }
+
+.header-tree { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; line-height: 2; }
+.header-tree .tag { font-weight: 600; }
+.header-tree .h1 { color: var(--maroon); }
+.header-tree .h2 { color: var(--blue); }
+.header-tree .h4 { color: var(--muted); }
+.header-tree .miss { color: var(--red); font-style: italic; font-weight: 600; }
+.header-tree .indent { padding-left: 1.5rem; }
+.header-tree .page-label {
+  display: block; color: var(--maroon); font-weight: 700; margin-top: 0.5rem;
+  padding-top: 0.5rem; border-top: 1px solid var(--border);
+}
+.header-tree .page-label:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+.gap-hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+.gap-hero-card {
+  background: var(--white); border-radius: 12px; padding: 2rem;
+  text-align: center; border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.gap-hero-card .number { font-size: 4rem; font-weight: 900; line-height: 1; letter-spacing: -0.03em; }
+.gap-hero-card .label { font-size: 1rem; font-weight: 600; color: var(--charcoal); margin-top: 0.25rem; }
+.gap-hero-card .sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+
+.rank-bar {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.6rem 0.75rem; border-radius: 6px;
+  margin-bottom: 0.4rem; font-size: 0.85rem;
+}
+.rank-bar .name { flex: 1; font-weight: 500; }
+.rank-bar .score { font-weight: 800; font-size: 0.95rem; }
+.rank-bar.winner { background: var(--green-light); }
+.rank-bar.loser { background: var(--red-light); }
+.rank-bar.neutral { background: var(--light-gray); }
+
+.plan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.plan-card {
+  background: var(--white); border-radius: 12px;
+  border: 1px solid var(--border); overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.plan-card-header {
+  background: var(--maroon); padding: 1rem 1.25rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.plan-card-header .step { font-size: 1.4rem; font-weight: 900; color: rgba(255,255,255,0.4); }
+.plan-card-header .step-title {
+  font-size: 1rem; font-weight: 700; color: var(--white);
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.plan-card-body { padding: 1.25rem; }
+.plan-card-body h4 { font-size: 0.9rem; font-weight: 700; color: var(--maroon); margin-bottom: 0.75rem; }
+.plan-card-body ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.plan-card-body li { font-size: 0.8rem; color: var(--text); padding-left: 1rem; position: relative; }
+.plan-card-body li::before { content: '•'; position: absolute; left: 0; color: var(--maroon); font-weight: 700; }
+.plan-card-body .callout {
+  font-size: 0.75rem; color: var(--maroon); font-style: italic;
+  margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--border);
+}
+
+.full-divider { height: 4px; background: linear-gradient(90deg, var(--maroon), var(--maroon-light), var(--maroon)); margin: 0; }
+
+.progress-bar { height: 6px; background: var(--light-gray); border-radius: 3px; overflow: hidden; margin-top: 0.5rem; }
+.progress-bar .fill { height: 100%; border-radius: 3px; }
+
+.share-bar { display: flex; height: 28px; border-radius: 6px; overflow: hidden; margin: 0.75rem 0; }
+.share-bar > div {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.65rem; font-weight: 700; color: white;
+}
+
+@media (max-width: 900px) {
+  .cover { grid-template-columns: 1fr; }
+  .card-grid.cols-3, .card-grid.cols-4 { grid-template-columns: 1fr 1fr; }
+  .card-grid.cols-2-1, .card-grid.cols-1-2 { grid-template-columns: 1fr; }
+  .gap-hero, .plan-grid { grid-template-columns: 1fr; }
+  .cover-title { font-size: 2.2rem; }
+  section { padding: 2rem 1.5rem; }
+  .score-layout { grid-template-columns: 1fr !important; }
+}
+
+@media print {
+  body { background: white; }
+  .cover { min-height: auto; page-break-after: always; }
+  section { page-break-inside: avoid; padding: 2rem 1rem; }
+  .full-divider { height: 2px; }
+  .card, .gap-hero-card, .plan-card, .summary-card { box-shadow: none; border: 1px solid #ddd; }
+  .share-bar > div { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  table th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .progress-bar .fill { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+.amg-logo {
+  background-image: url("data:image/png;base64,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");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: block;
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- ===== COVER ===== -->
+<div class="cover">
+  <div class="cover-left">
+    <div class="cover-logo"><div class="amg-logo" style="width:180px;height:48px"></div></div>
+    <div class="cover-content">
+      <div class="cover-badge">Prepared for SWFL Office Solutions &middot; Digital Audit</div>
+      <h1 class="cover-title">
+        Digital Health &amp;<br>Performance<br>Assessment
+        <span>Gap Analysis &middot; Recommended Solution</span>
+      </h1>
+    </div>
+    <div class="cover-footer">
+      <div class="cover-divider"></div>
+      <div class="cover-client">SWFL Office Solutions</div>
+      <div class="cover-url">sosxrx.com &middot; Xerox Authorized Dealer &middot; Fort Myers, FL</div>
+      <div style="font-size:0.72rem;color:rgba(255,255,255,0.25);margin-top:0.75rem;letter-spacing:0.04em">June 2026 &middot; Confidential</div>
+    </div>
+  </div>
+  <div class="cover-right">
+
+    <!-- CARD 1: AUDIT SUMMARY — 6 mini metric blocks. Tokenize value + color (red/amber/text per severity). -->
+    <div class="summary-card">
+      <h3>Audit Summary</h3>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem">
+
+        <div style="border-top:3px solid var(--green);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Site Health</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--green);line-height:1">88%</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">Est.</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Authority Score</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">8</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">Est.</div>
+        </div>
+
+        <div style="border-top:3px solid var(--text);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Keywords</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--text);line-height:1">305</div>
+          <div style="font-size:0.6rem;color:var(--green);font-weight:700;margin-top:0.1rem">&minus;2.87% MoM</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Branded Traffic</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">0%</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">of all organic visits</div>
+        </div>
+
+        <div style="border-top:3px solid var(--red);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">Organic Traffic</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--red);line-height:1">48</div>
+          <div style="font-size:0.6rem;color:var(--muted);margin-top:0.1rem">visits / month</div>
+        </div>
+
+        <div style="border-top:3px solid var(--amber);border-radius:0 0 6px 6px;background:var(--light-gray);padding:0.6rem 0.65rem">
+          <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">AI Visibility</div>
+          <div style="font-size:1.15rem;font-weight:900;color:var(--amber);line-height:1">78<span style="font-size:0.7rem;font-weight:600;color:var(--muted)">/100</span></div>
+          <div style="font-size:0.6rem;color:var(--amber);font-weight:600;margin-top:0.1rem">NEAR THRESHOLD</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 2: BIGGEST OPPORTUNITIES — 4 items. Severity = red-light/Critical or amber-light/High. -->
+    <div class="summary-card">
+      <h3>Biggest Opportunities</h3>
+      <div style="display:flex;flex-direction:column;gap:0.45rem">
+        <div style="padding:0.65rem 0.85rem;background:var(--red-light);border-radius:6px;border-left:3px solid var(--red)">
+          <div style="font-size:0.55rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:0.3rem">Critical</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.45">223 pages earn only <strong>48 visits/month</strong> &mdash; 210 flagged for thin content that can&rsquo;t hold rankings</div>
+        </div>
+        <div style="padding:0.65rem 0.85rem;background:var(--red-light);border-radius:6px;border-left:3px solid var(--red)">
+          <div style="font-size:0.55rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--red);margin-bottom:0.3rem">Critical</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.45">Competitor Novatech captures <strong>97&times; more monthly traffic</strong> with Authority Score 3.6&times; higher</div>
+        </div>
+        <div style="padding:0.65rem 0.85rem;background:var(--amber-light);border-radius:6px;border-left:3px solid var(--amber)">
+          <div style="font-size:0.55rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.3rem">High</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.45">Business name listed as <strong>&ldquo;Naples Office Solutions, LLC&rdquo;</strong> in 4 directories &mdash; wrong on Bing-connected listings</div>
+        </div>
+        <div style="padding:0.65rem 0.85rem;background:var(--amber-light);border-radius:6px;border-left:3px solid var(--amber)">
+          <div style="font-size:0.55rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:0.3rem">High</div>
+          <div style="font-size:0.79rem;color:var(--text);line-height:1.45">Only <strong>2 Google reviews</strong> despite years in market &mdash; social proof gap hurts both conversions and local rank</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: TRAFFIC BREAKDOWN — branded vs non-branded hero. Tokenize the two percentages + visit counts. -->
+    <div class="summary-card">
+      <h3>Traffic Breakdown</h3>
+      <div style="display:flex;align-items:center;gap:1.25rem;margin-bottom:0.85rem">
+        <div style="text-align:center;flex-shrink:0">
+          <div style="font-size:2.6rem;font-weight:900;color:var(--red);line-height:1;letter-spacing:-0.03em">0%</div>
+          <div style="font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-top:0.1rem">Branded</div>
+        </div>
+        <div style="flex:1;min-width:0">
+          <!-- EDIT: one-sentence framing of the branded-traffic problem for this client -->
+          <div style="font-size:0.75rem;color:var(--text);line-height:1.5">Every one of sosxrx.com&rsquo;s <strong style="color:var(--red)">48 monthly visitors</strong> arrived via non-branded search &mdash; no awareness traffic at all.</div>
+          <!-- /EDIT -->
+        </div>
+      </div>
+
+      <!-- Stacked bar: widths = branded% / non-branded%. Numbers inside = visit counts. -->
+      <div style="height:22px;border-radius:4px;overflow:hidden;display:flex;margin-bottom:0.65rem">
+        <div style="width:0%;background:var(--maroon);display:flex;align-items:center;justify-content:flex-end;padding-right:0.5rem">
+          <span style="font-size:0.62rem;font-weight:800;color:rgba(255,255,255,0.85)">0</span>
+        </div>
+        <div style="width:100%;background:var(--red);display:flex;align-items:center;justify-content:center">
+          <span style="font-size:0.62rem;font-weight:800;color:rgba(255,255,255,0.85)">48</span>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;font-size:0.72rem">
+        <div style="display:flex;align-items:center;gap:0.35rem">
+          <div style="width:8px;height:8px;border-radius:2px;background:var(--maroon);flex-shrink:0"></div>
+          <span style="color:var(--text);font-weight:600">Branded</span>
+          <span style="color:var(--muted)">0%</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.35rem">
+          <div style="width:8px;height:8px;border-radius:2px;background:var(--red);flex-shrink:0"></div>
+          <span style="color:var(--text);font-weight:600">Non-Branded</span>
+          <span style="color:var(--red);font-weight:700">100%</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="full-divider"></div>
+
+<!-- ===== ABSTRAKT CREDIBILITY BAR ===== -->
+<div style="background:linear-gradient(135deg,#111111 0%,#1A1A1A 60%,#1f1f1f 100%);border-top:3px solid var(--maroon);padding:0 3rem">
+  <div style="max-width:1300px;margin:0 auto;display:flex;align-items:stretch">
+
+    <!-- Inbound SDR logo anchor -->
+    <div style="display:flex;align-items:center;padding:1.6rem 2.5rem 1.6rem 0;border-right:1px solid rgba(255,255,255,0.08);flex-shrink:0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.9 63.9" style="width:170px;height:32px;display:block">
+        <defs><style>.ib-cls-1{fill:none}.ib-cls-2{fill:#fff}.ib-cls-3{fill:#a21d21}</style></defs>
+        <g>
+          <g>
+            <g>
+              <path class="ib-cls-3" d="M247,39.4c-5.6,0-11.3-2-15.7-5.9l4.8-5.8c3.3,2.8,6.8,4.5,11.1,4.5,3.3,0,5.3-1.3,5.3-3.5v-.1c0-2.1-1.3-3.1-7.4-4.7-7.4-1.9-12.3-4-12.3-11.3v-.1c0-6.7,5.4-11.1,12.9-11.1,5.4,0,10,1.7,13.7,4.7l-4.2,6.1c-3.3-2.3-6.5-3.6-9.6-3.6s-4.8,1.4-4.8,3.2v.1c0,2.4,1.6,3.2,8,4.9,7.5,2,11.7,4.6,11.7,11.1v.1c.1,7.3-5.5,11.4-13.5,11.4z"/>
+              <path class="ib-cls-3" d="M279.1,38.9h-14.4V1.9h14.4c11.6,0,19.7,8,19.7,18.4v.1c0,10.4-8.1,18.5-19.7,18.5zM290.3,20.4c0-6.6-4.5-11.1-11.1-11.1h-6.3v22.3h6.3c6.6,0,11.1-4.5,11.1-11.2z"/>
+              <path class="ib-cls-3" d="M325.3,38.9l-7.9-11.8h-6.4v11.8h-8.1V1.9h16.9c8.7,0,14,4.6,14,12.2v.1c0,6-3.2,9.7-7.9,11.5l9,13.2h-9.6zM325.5,14.5c0-3.5-2.4-5.3-6.4-5.3h-8.1v10.6h8.2c4,0,6.2-2.1,6.2-5.2v-.1z"/>
+            </g>
+            <g>
+              <path class="ib-cls-2" d="M0,50h4.4c4.3,0,7.3,3,7.3,6.8h0c0,3.8-3,6.8-7.2,6.8H0v-13.6zM4.5,63c3.9,0,6.6-2.7,6.6-6.2h0c0-3.5-2.6-6.2-6.6-6.2H.7v12.4h3.8z"/>
+              <path class="ib-cls-2" d="M16.6,50h.7v13.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M22.2,56.8h0c0-3.7,2.6-7.1,6.7-7.1,2.1,0,3.5.6,4.8,1.8l-.3.5c-1.2-1-2.4-1.7-4.4-1.7-3.6,0-6,3.1-6,6.4h0c0,3.5,2.3,6.5,6.1,6.5,1.9,0,3.6-.8,4.7-1.8v-4.2h-4.9v-.6h5.5v5.1c-1.3,1.2-3.1,2.1-5.3,2.1-4.4.1-6.9-3.1-6.9-7z"/>
+              <path class="ib-cls-2" d="M39.5,50h.7v13.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M49.3,50.6h-4.8v-.6h10.4v.6h-4.9v13h-.7v-13z"/>
+              <path class="ib-cls-2" d="M62.4,49.9h.6l6.5,13.7h-.7l-1.8-4h-8.4l-1.9,4h-.7l6.4-13.7zM66.6,59l-3.9-8.4-3.9,8.4h7.8z"/>
+              <path class="ib-cls-2" d="M73.6,50h.7v13h8.2v.6h-8.9v-13.6z"/>
+              <path class="ib-cls-2" d="M92.7,61.6l.4-.5c1.4,1.4,3,2.1,5,2.1,2.4,0,3.9-1.3,3.9-3h0c0-1.6-.9-2.5-4.2-3.1-3.3-.7-4.6-1.7-4.6-3.7h0c0-2,1.8-3.5,4.4-3.5,1.9,0,3.3.6,4.6,1.6l-.4.5c-1.2-1-2.7-1.5-4.3-1.5-2.2,0-3.7,1.3-3.7,2.9h0c0,1.6.9,2.5,4.2,3.1,3.4.7,4.6,1.8,4.6,3.7h0c0,2.1-1.8,3.7-4.6,3.7-1.9-.1-3.7-.8-5.3-2.3z"/>
+              <path class="ib-cls-2" d="M107.4,50h9.6v.6h-8.9v5.9h8.1v.6h-8.1v6h9v.6h-9.7v-13.7z"/>
+              <path class="ib-cls-2" d="M127,49.9h.6l6.5,13.7h-.7l-1.9-4h-8.4l-1.9,4h-.7l6.5-13.7zM131.2,59l-3.9-8.4-3.9,8.4h7.8z"/>
+              <path class="ib-cls-2" d="M138.2,50h5.6c1.7,0,3.1.5,3.9,1.3.6.6,1,1.5,1,2.5h0c0,2.3-1.8,3.6-4.3,3.9l4.5,5.9h-.8l-4.4-5.8h-4.8v5.8h-.7v-13.6zM143.7,57.2c2.8,0,4.4-1.4,4.4-3.3h0c0-2-1.6-3.3-4.3-3.3h-4.9v6.6h4.8z"/>
+              <path class="ib-cls-2" d="M152.9,56.8h0c0-3.9,2.9-7.1,6.7-7.1,2.5,0,3.9.9,5.2,2.2l-.5.5c-1.1-1.1-2.5-2-4.8-2-3.5,0-6,2.9-6,6.4h0c0,3.5,2.6,6.4,6.1,6.4,2.1,0,3.6-.9,4.9-2.2l.5.5c-1.3,1.3-2.9,2.3-5.4,2.3-3.8.1-6.7-3.1-6.7-7z"/>
+              <path class="ib-cls-2" d="M169.1,50h.7v6.5h9.3v-6.5h.7v13.6h-.7v-6.6h-9.3v6.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M195.7,50.6h-4.9v-.6h10.4v.6h-4.9v13h-.7v-13z"/>
+              <path class="ib-cls-2" d="M205.4,50h.7v6.5h9.3v-6.5h.7v13.6h-.7v-6.6h-9.4v6.6h-.7v-13.6z"/>
+              <path class="ib-cls-2" d="M226.6,49.9h.6l6.5,13.7h-.7l-1.9-4h-8.4l-1.9,4h-.7l6.5-13.7zM230.9,59l-3.9-8.4-4,8.4h7.9z"/>
+              <path class="ib-cls-2" d="M239.7,50.6h-4.9v-.6h10.4v.6h-4.9v13h-.7v-13z"/>
+              <path class="ib-cls-2" d="M255.2,50h.7l4.3,12.7,4.1-12.7h.5l4.1,12.8,4.3-12.7h.7l-4.7,13.7h-.5l-4.1-12.5-4.1,12.5h-.5l-4.8-13.8z"/>
+              <path class="ib-cls-2" d="M276.8,56.8h0c0-3.8,2.7-7.1,6.8-7.1s6.8,3.3,6.8,7h0c0,3.7-2.7,7-6.8,7s-6.8-3.1-6.8-6.9zM289.8,56.9h0c0-3.5-2.5-6.5-6.1-6.5s-6.1,3-6.1,6.4h0c0,3.5,2.5,6.5,6.2,6.5s6-3,6-6.4z"/>
+              <path class="ib-cls-2" d="M295.3,50h5.6c1.7,0,3.1.5,3.9,1.3.6.6,1,1.5,1,2.5h0c0,2.3-1.8,3.6-4.3,3.9l4.5,5.9h-.8l-4.4-5.8h-4.8v5.8h-.7v-13.6zM300.7,57.2c2.8,0,4.4-1.4,4.4-3.3h0c0-2-1.6-3.3-4.3-3.3h-4.9v6.6h4.8z"/>
+              <path class="ib-cls-2" d="M310.7,50h.7v9.1l9.1-9.1h.9l-5.9,5.9,6.2,7.8h-.9l-5.8-7.3-3.6,3.6v3.7h-.7v-13.7z"/>
+              <path class="ib-cls-2" d="M324.8,61.6l.5-.5c1.4,1.4,3,2.1,5,2.1,2.4,0,3.9-1.3,3.9-3h0c0-1.6-.9-2.5-4.2-3.1-3.3-.7-4.6-1.7-4.6-3.7h0c0-2,1.9-3.5,4.4-3.5,1.9,0,3.4.6,4.6,1.6l-.4.5c-1.2-1-2.7-1.5-4.3-1.5-2.2,0-3.7,1.3-3.7,2.9h0c0,1.6.9,2.5,4.2,3.1,3.4.7,4.6,1.8,4.6,3.7h0c0,2.1-1.8,3.7-4.6,3.7-2.1-.1-3.8-.8-5.4-2.3z"/>
+            </g>
+            <path class="ib-cls-2" d="M147.9,24.5c0,8.9-4.8,13.4-12.2,13.4s-12.5-5-12.5-13.7V3h-2.7v21.5c0,10.3,6.3,15.9,15.1,15.9s15.1-5.6,15.1-16.2V3h-2.7l-.1,21.5z"/>
+            <polygon class="ib-cls-2" points="184.1 35 158.7 3 156.2 3 156.2 39.8 158.8 39.8 158.8 7.1 184.7 39.8 186.8 39.8 186.8 3 184.1 3 184.1 35"/>
+            <path class="ib-cls-2" d="M204.5,3h-12.2v36.8h12.2c11.6,0,19.6-8,19.6-18.4v-.1c0-10.3-8-18.3-19.6-18.3zM221.2,21.5c0,8.8-6.5,15.8-16.7,15.8h-9.5V5.5h9.5c10.2,0,16.7,7.2,16.7,15.9v.1z"/>
+            <path class="ib-cls-2" d="M65.6,20.9c3-1.2,6.3-3.7,6.3-8.7v-.1c0-5.5-4.8-9-11.9-9h-15.3v36.8h16c7.9,0,13.2-3.9,13.2-10v-.1c0-5.2-3.9-7.8-8.3-8.9zM47.4,5.5h12.4c5.9,0,9.2,2.7,9.2,6.8v.1c0,4.9-3.9,7.6-9.5,7.6h-12.1V5.5zM71.1,29.8c0,4.6-4,7.5-10.3,7.5h-13.4v-14.8h12.5c7.2,0,11.2,2.6,11.2,7.1v.2z"/>
+            <rect class="ib-cls-2" x="0" y="3" width="2.7" height="36.8"/>
+            <polygon class="ib-cls-2" points="36.4 35 11 3 8.4 3 8.4 39.8 11 39.8 11 7.1 37 39.8 39 39.8 39 3 36.4 3 36.4 35"/>
+            <g>
+              <path class="ib-cls-2" d="M96.4,0c-11.6,0-20.9,9.4-20.9,20.9s9.4,20.9,20.9,20.9c1.5,0,3-.2,4.4-.5-.1-.1-.1-.2-.2-.3l-.9-2.8c-.7.7-1.5,1.1-2.3,1.3v-8.8l-.6-1.9-.8-2.7-.7-2.3v4.5c-2.4,0-4.8.2-7,.6-.5-2.1-.8-4.5-.9-6.9h7.3l-.2-.6c-.2-.5-.1-1,.1-1.5h-7.2c.1-2.5.4-4.8.9-6.9,2.2.3,4.6.5,7,.6v5.4c.4-.3.8-.4,1.2-.4.3,0,.6.1.9.2v-5.4c2.4,0,4.8-.2,7-.6.5,2.1.8,4.5.9,6.9h-6.2l1.4.9,2.1,1.3h2.7c0,.5,0,1-.1,1.5l.6.4,1.4.9c.1-.9.2-1.8.2-2.8h7.6c-.1,2.3-.7,4.5-1.6,6.5l.1.1,1.6,1s.1,0,.1.1c1.2-2.6,1.9-5.6,1.9-8.7.1-11.6-9.2-20.9-20.7-20.9zM80.5,10.9c1.6.7,3.5,1.2,5.6,1.6-.5,2.2-.8,4.7-.9,7.3h-7.6c.2-3.3,1.3-6.3,2.9-8.9zM80.5,30.9c-1.7-2.6-2.7-5.7-2.9-9h7.6c.1,2.6.4,5.1.9,7.3-2.1.5-4,1.1-5.6,1.7zM95.3,30.5v9c-2.7-.7-5-3.9-6.4-8.5,2-.3,4.2-.5,6.4-.5zM90.4,38.7c-3.4-1.1-6.4-3.2-8.6-6,1.4-.5,3.1-1,4.8-1.4,1,3,2.3,5.6,3.8,7.4zM86.7,10.4c-1.8-.4-3.4-.8-4.8-1.4,2.2-2.7,5.2-4.8,8.6-6-1.6,1.9-2.9,4.4-3.8,7.4zM95.3,11.3c-2.2,0-4.4-.2-6.4-.5,1.4-4.6,3.8-7.8,6.4-8.5v9zM97.4,11.3V2.3c2.7.7,5,3.9,6.4,8.5-2,.3-4.2.4-6.4.5zM102.3,3.1c3.4,1.1,6.4,3.2,8.6,6-1.4.5-3,1-4.8,1.4-1-3.1-2.3-5.6-3.8-7.4zM107.5,19.8c-.1-2.6-.4-5.1-.9-7.3,2.1-.4,4-1,5.6-1.6,1.7,2.6,2.7,5.7,2.9,8.9h-7.6z"/>
+              <path class="ib-cls-3" d="M114.4,30.8l-1.6-1-5.7-3.4-2-1.2-5.3-3.2-2.9-1.8c-.1-.1-.2-.1-.3-.1-.4,0-.7.4-.6.8l1.5,4.8.8,2.7.7,2.2,2,6.4,1.1,3.6c.1.2.2.3.4.4h.2c.2,0,.3-.1.4-.2l.1-.1,2.1-4,2.4,3c.1.2.3.2.5.2.1,0,.3,0,.4-.1l3.3-2.7c.3-.2.3-.6.1-.9l-2.4-3,4.3-1.1h.1l.2-.1c.4-.1.6-.6.3-.9c0-.2,0-.3-.1-.3z"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Stats -->
+    <div style="flex:1;display:flex;align-items:stretch">
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--maroon);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">2,000+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Active Clients</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--maroon);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">$1B+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Revenue Generated</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem;background:rgba(123,24,24,0.12)">
+        <div style="width:24px;height:2px;background:var(--maroon-light);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">3.55x</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Avg. Client ROI</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--maroon);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">200+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Industry Awards</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;border-right:1px solid rgba(255,255,255,0.08);gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--maroon);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">Inc. 5000</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">10&times; Honoree</div>
+      </div>
+
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:1.6rem 1rem;gap:0.2rem">
+        <div style="width:24px;height:2px;background:var(--maroon);border-radius:2px;margin-bottom:0.35rem"></div>
+        <div style="font-size:1.55rem;font-weight:900;color:var(--white);letter-spacing:-0.02em;line-height:1">100K+</div>
+        <div style="font-size:0.6rem;font-weight:600;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.12em">Appointments / Year</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ===== DIGITAL HEALTH SCORE ===== -->
+<section>
+  <div class="section-header">
+    <div class="section-number" style="background:var(--charcoal)">&#9733;</div>
+    <h2 class="section-title">Digital Health Score</h2>
+  </div>
+
+  <div class="score-layout" style="display:grid;grid-template-columns:280px 1fr;gap:2rem;align-items:start">
+    <div class="card" style="text-align:center;padding:2rem">
+      <div style="position:relative;width:180px;height:180px;margin:0 auto 1rem">
+        <!-- Gauge: circumference = 327. dashoffset = round(327 * (1 - HEALTH_SCORE/100)). e.g. score 35 -> 213. -->
+        <svg viewBox="0 0 120 120" style="transform:rotate(-90deg)">
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#E5E0DB" stroke-width="10"/>
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#D4920A" stroke-width="10"
+                  stroke-dasharray="327" stroke-dashoffset="173" stroke-linecap="round"/>
+        </svg>
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center">
+          <div style="font-size:3rem;font-weight:900;color:var(--amber);line-height:1">47</div>
+          <div style="font-size:0.75rem;color:var(--muted);font-weight:600">out of 100</div>
+        </div>
+      </div>
+      <div style="font-size:1.1rem;font-weight:800;color:var(--amber)">NEEDS WORK</div>
+      <!-- EDIT: one-line summary of the core problem -->
+      <div style="font-size:0.75rem;color:var(--muted);margin-top:0.25rem">
+        Well-built site. Thin content across 210 pages.<br>The digital infrastructure works &mdash; search engines just can&rsquo;t find enough substance to surface it.
+      </div>
+      <!-- /EDIT -->
+    </div>
+
+    <!-- 8 sub-score cards. Each: VALUE + COLOR (red/amber/green per threshold) + one-line NOTE. Bar width = value%. -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem">
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Site Health</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">4 active errors — broken internal links and 2 broken pages needing resolution</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--green)">88<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:88%;background:var(--green)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Site Speed</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">GTmetrix Grade A &mdash; LCP 1.3s, TBT 0ms, CLS 0</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--green)">95<span style="font-size:0.8rem;color:var(--muted)">/100 <em style="font-size:0.65rem">Est.</em></span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:95%;background:var(--green)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Keyword Visibility</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">305 keywords earn just 48 monthly visits &mdash; nearly all in low-volume local territory</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">22<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:22%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Content Strategy</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">210 of 223 pages flagged for thin content &mdash; topical depth absent at scale</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">20<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:20%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Local SEO</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">NAP inconsistency across 4 key directories &mdash; absent from Bing and Facebook</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">38<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:38%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Competitive Position</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">Captures &lt;1% of competitive traffic &mdash; Authority Score 3.6&times; below market leader</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--red)">18<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:18%;background:var(--red)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Security &amp; Technical</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">HTTPS active, JSON-LD deployed &mdash; HSTS absent, 22 HTTP internal links flagged</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--amber)">62<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:62%;background:var(--amber)"></div></div>
+      </div>
+
+      <div class="card" style="padding:1rem 1.25rem">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+          <div>
+            <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">AI Search Readiness</div>
+            <div style="font-size:0.82rem;color:var(--text);margin-top:0.15rem">78% Semrush AI Health &mdash; llms.txt missing, just below 80% optimization threshold</div>
+          </div>
+          <div style="font-size:1.6rem;font-weight:800;color:var(--amber)">55<span style="font-size:0.8rem;color:var(--muted)">/100</span></div>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width:55%;background:var(--amber)"></div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="display:flex;gap:2rem;margin-top:1.5rem;justify-content:center">
+    <div style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;color:var(--muted)">
+      <div style="width:12px;height:12px;border-radius:3px;background:var(--green)"></div> 70&ndash;100 Strong
+    </div>
+    <div style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;color:var(--muted)">
+      <div style="width:12px;height:12px;border-radius:3px;background:var(--amber)"></div> 40&ndash;69 Needs Work
+    </div>
+    <div style="display:flex;align-items:center;gap:0.4rem;font-size:0.75rem;color:var(--muted)">
+      <div style="width:12px;height:12px;border-radius:3px;background:var(--red)"></div> 0&ndash;39 Critical
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+<!-- ===== SECTION 01: WEBSITE PERFORMANCE ===== -->
+<section>
+  <div class="section-header">
+    <div class="section-number">01</div>
+    <h2 class="section-title">Website Performance</h2>
+  </div>
+
+  <!-- Top 4 cards: tokenize value + note. dot color (green/amber/red) reflects severity. -->
+  <div class="card-grid cols-4" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> CMS Platform</div>
+      <div class="big-stat warning" style="font-size:2rem">WordPress</div>
+      <div class="stat-sub">Confirmed via schema patterns and page structure</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> Pages in Sitemap</div>
+      <div class="big-stat warning">223</div>
+      <div class="stat-sub">216 active pages &mdash; 210 flagged for thin content</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> GTmetrix Grade</div>
+      <div class="big-stat warning">A</div>
+      <div class="stat-sub">Performance 93% &middot; Structure 99% &middot; LCP 1.3s</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot green"></span> Security</div>
+      <div class="big-stat success" style="font-size:2rem">HTTPS</div>
+      <div class="stat-sub">JSON-LD schema active on 210 pages &mdash; HSTS not yet configured</div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <!-- EDIT: Top Issues list. issue-icon.error (red !) for errors, issue-icon.warn (amber !) for warnings. REPEAT issue-item per finding. Update the two badge counts. -->
+      <div class="card-label"><span class="dot red"></span> Top Issues &nbsp;<span class="badge red">4 errors</span>&nbsp;<span class="badge amber">8 warnings</span></div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>2 broken internal links</strong> &mdash; crawlers and visitors hit dead ends inside the site navigation</div></div>
+      <div class="issue-item"><div class="issue-icon error">!</div><div><strong>2 broken pages (404)</strong> &mdash; mailto links in /about-us/our-team/ resolve to 404 pages</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>210 pages with low text-to-HTML ratio</strong> &mdash; 94% of the site is content-thin; rankings cannot hold</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>39 title tags too long</strong> &mdash; Google truncates and rewrites; keyword signals diluted</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>22 internal links pointing to HTTP on an HTTPS site</strong> &mdash; mixed-content signals hurt trust ranking</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>210 pages with nofollow on internal links</strong> &mdash; page authority cannot flow across the site</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>6 orphaned sitemap pages</strong> &mdash; Google discovers these via sitemap but they receive no internal links</div></div>
+      <div class="issue-item"><div class="issue-icon warn">!</div><div><strong>llms.txt not found</strong> &mdash; AI engines receive no structured guidance about sosxrx.com</div></div>
+      <!-- /EDIT -->
+    </div>
+    <div class="card">
+      <!-- EDIT: Semrush Site Health narrative + 6-cell detail grid. Tokenize the 6 numbers/labels to the client's audit. -->
+      <div class="card-label"><span class="dot amber"></span> Semrush Site Health &mdash; Detail</div>
+      <p style="font-size:0.85rem;color:var(--text);margin-bottom:1rem">The site audit found 4 active errors and significant structural warnings across the 223-page sosxrx.com domain. The most impactful issue isn&rsquo;t broken links &mdash; it&rsquo;s that <strong>210 of 223 pages are flagged for thin content</strong>. That&rsquo;s 94% of the site, and it means search engines don&rsquo;t see enough substance to surface these pages for meaningful queries. The technical shell is solid; the content layer is missing.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-top:0.5rem">
+        <div style="background:var(--red-light);border-radius:6px;padding:0.65rem 0.75rem">
+          <div style="font-size:1.5rem;font-weight:800;color:var(--red)">210</div>
+          <div style="font-size:0.7rem;color:var(--muted)">Thin Content Pages</div>
+        </div>
+        <div style="background:var(--red-light);border-radius:6px;padding:0.65rem 0.75rem">
+          <div style="font-size:1.5rem;font-weight:800;color:var(--red)">210</div>
+          <div style="font-size:0.7rem;color:var(--muted)">Nofollow Internal Links</div>
+        </div>
+        <div style="background:var(--amber-light);border-radius:6px;padding:0.65rem 0.75rem">
+          <div style="font-size:1.5rem;font-weight:800;color:var(--amber)">39</div>
+          <div style="font-size:0.7rem;color:var(--muted)">Title Tags Too Long</div>
+        </div>
+        <div style="background:var(--amber-light);border-radius:6px;padding:0.65rem 0.75rem">
+          <div style="font-size:1.5rem;font-weight:800;color:var(--amber)">22</div>
+          <div style="font-size:0.7rem;color:var(--muted)">HTTP Links on HTTPS Site</div>
+        </div>
+        <div style="background:var(--amber-light);border-radius:6px;padding:0.65rem 0.75rem">
+          <div style="font-size:1.5rem;font-weight:800;color:var(--amber)">114</div>
+          <div style="font-size:0.7rem;color:var(--muted)">Pages 4+ Clicks Deep</div>
+        </div>
+        <div style="background:var(--amber-light);border-radius:6px;padding:0.65rem 0.75rem">
+          <div style="font-size:1.5rem;font-weight:800;color:var(--amber)">6</div>
+          <div style="font-size:0.7rem;color:var(--muted)">Orphaned Sitemap Pages</div>
+        </div>
+      </div>
+      <!-- /EDIT -->
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+<!-- ===== SECTION 02: KEYWORDS & TRAFFIC ===== -->
+<section>
+  <div class="section-header">
+    <div class="section-number">02</div>
+    <h2 class="section-title">Keywords &amp; Traffic</h2>
+  </div>
+
+  <div class="card-grid cols-3" style="margin-bottom:1rem">
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> Total Organic Keywords</div>
+      <div class="big-stat neutral">305</div>
+      <div class="stat-sub">&minus;2.87% MoM &middot; down 9 keywords</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> Organic Traffic</div>
+      <div class="big-stat warning">48<span style="font-size:1.2rem">/mo</span></div>
+      <div class="stat-sub">&minus;4% MoM &middot; Est. $50/mo traffic value</div>
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot amber"></span> Authority Score</div>
+      <div class="big-stat warning">8 <span style="font-size:0.9rem;color:var(--muted)">Est.</span></div>
+      <div class="stat-sub">566 backlinks &middot; 178 referring domains</div>
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <!-- EDIT: Top Organic Keywords table. REPEAT <tr> per keyword (position color: green #1-3, amber 4-10, red 11+). -->
+      <div class="card-label"><span class="dot amber"></span> Top Organic Keywords</div>
+      <table>
+        <thead><tr><th>Keyword</th><th>Pos.</th><th>Vol.</th><th>Traffic%</th></tr></thead>
+        <tbody>
+          <tr><td>xerox dealers near me</td><td style="color:var(--green);font-weight:700">#1</td><td>320</td><td><span class="badge amber">16.7%</span></td></tr>
+          <tr><td>managed print services sarasota</td><td style="color:var(--green);font-weight:700">#1</td><td>50</td><td><span class="badge amber">8.3%</span></td></tr>
+          <tr><td>multifunction printers sarasota</td><td style="color:var(--green);font-weight:700">#1</td><td>40</td><td><span class="badge amber">10.4%</span></td></tr>
+          <tr><td>xerox authorized dealer sarasota</td><td style="color:var(--green);font-weight:700">#1</td><td>40</td><td><span class="badge amber">8.3%</span></td></tr>
+          <tr><td>office printer repair naples</td><td style="color:var(--green);font-weight:700">#3</td><td>40</td><td><span class="badge amber">2.1%</span></td></tr>
+          <tr><td>xerox managed print services near me</td><td style="color:var(--amber);font-weight:700">#15</td><td>140</td><td><span class="badge red">0%</span></td></tr>
+          <tr><td>output management services</td><td style="color:var(--red);font-weight:700">—</td><td>140</td><td><span class="badge red">0%</span></td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.78rem;color:var(--muted);margin-top:0.75rem">SWFL holds strong #1 positions &mdash; but nearly all top keywords average <strong style="color:var(--red)">40&ndash;50 searches/month.</strong> The volume simply isn&rsquo;t there yet.</p>
+      <!-- /EDIT -->
+    </div>
+    <div class="card">
+      <div class="card-label"><span class="dot red"></span> Branded vs. Non-Branded</div>
+      <div style="display:flex;gap:2rem;margin-bottom:1rem">
+        <div>
+          <div class="big-stat sm danger">0%</div>
+          <div class="stat-sub">Branded &mdash; 0 visits</div>
+        </div>
+        <div>
+          <div class="big-stat sm warning">100%</div>
+          <div class="stat-sub">Non-branded &mdash; 48 visits</div>
+        </div>
+      </div>
+      <div class="share-bar">
+        <div style="width:0%;background:var(--maroon)">Branded 0%</div>
+        <div style="width:100%;background:var(--red)">100%</div>
+      </div>
+      <div style="margin-top:1rem">
+        <!-- EDIT: Keywords by Intent table. REPEAT <tr> per intent; highlight the transactional row. -->
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Keywords by Intent</div>
+        <table>
+          <thead><tr><th>Intent</th><th>Keywords</th><th>Typical Vol.</th></tr></thead>
+          <tbody>
+            <tr><td>Commercial</td><td>114 (37%)</td><td>40&ndash;50/mo</td></tr>
+            <tr><td>Informational</td><td>113 (37%)</td><td>40&ndash;90/mo</td></tr>
+            <tr><td>Navigational</td><td>75 (25%)</td><td>90&ndash;320/mo</td></tr>
+            <tr class="highlight"><td><strong>Transactional</strong></td><td><strong>62 (20%)</strong></td><td><strong style="color:var(--red)">40&ndash;50/mo</strong></td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.78rem;color:var(--red);margin-top:0.5rem;font-weight:600">Transactional keywords are there &mdash; but the low search volume means paid media or broader content expansion is needed to move the needle.</p>
+        <!-- /EDIT -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+<!-- ===== SECTION 03: SEO CONTENT ===== -->
+<section>
+  <div class="section-header">
+    <div class="section-number">03</div>
+    <h2 class="section-title">SEO Content</h2>
+  </div>
+
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+    <div class="card">
+      <!-- EDIT: Header tree for key pages. page-label = URL; tag = <H1>/<H2>; .miss line = ⚠ flag for each gap. -->
+      <div class="card-label"><span class="dot amber"></span> Header Structure (Key Pages)</div>
+      <div class="header-tree">
+        <span class="page-label">Homepage (sosxrx.com/)</span>
+        <div><span class="tag">&lt;H1&gt;</span> <span class="h1">Xerox Authorized Dealer Naples FL | Managed Print Services &amp; Copier Lease</span></div>
+        <div class="indent"><span class="tag">&lt;H2&gt;</span> <span class="h2">Services</span></div>
+        <div class="indent miss">⚠ H1 leads with Naples FL but business is in Fort Myers &mdash; geographic mismatch</div>
+        <div class="indent miss">⚠ No H2 targeting "managed print services fort myers"</div>
+
+        <span class="page-label">Managed Print (/managed-print/)</span>
+        <div><span class="tag">&lt;H1&gt;</span> <span class="h1">Managed Print Services Sarasota | Office Production Printers Winter Park</span></div>
+        <div class="indent miss">⚠ Two competing cities in H1; confuses local SEO signals</div>
+        <div class="indent miss">⚠ Fort Myers &mdash; the actual service area &mdash; absent from key page H1</div>
+
+        <span class="page-label">Printer Services (/printer-services/)</span>
+        <div><span class="tag">&lt;H1&gt;</span> <span class="h1">Office Printer Repair Services Winter Park | Business Equipment Solutions Sarasota</span></div>
+        <div class="indent miss">⚠ H1 targets Winter Park (Orlando market), not SWFL primary area</div>
+
+        <span class="page-label">Naples Office (/naples-office/)</span>
+        <div><span class="tag">&lt;H1&gt;</span> <span class="h1">Naples Office Printer Repair | Printer Service Provider near Fort Myers</span></div>
+        <div class="indent"><span class="tag">&lt;H2&gt;</span> <span class="h2">Local Service Coverage</span></div>
+        <div class="indent miss">⚠ No dedicated Fort Myers location page despite Fort Myers address</div>
+      </div>
+      <!-- /EDIT -->
+    </div>
+    <div class="card">
+      <!-- EDIT: Service/Solution pages table. badge amber = Exists, badge red = Missing. REPEAT <tr> per page. -->
+      <div class="card-label"><span class="dot red"></span> Service &amp; Location Pages</div>
+      <p style="font-size:0.85rem;color:var(--text);margin-bottom:1rem">sosxrx.com has core service pages but is missing the geo-targeted depth and service specificity that drives local organic conversions:</p>
+      <table>
+        <thead><tr><th>Page</th><th>Status</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>Managed Print Services</td><td><span class="badge amber">Exists</span></td><td>H1 targets Sarasota, not Fort Myers</td></tr>
+          <tr><td>Copier Leasing</td><td><span class="badge amber">Exists</span></td><td>Needs deeper content for local ranking</td></tr>
+          <tr><td>Printer Repair Services</td><td><span class="badge amber">Exists</span></td><td>H1 targets Winter Park &mdash; wrong city</td></tr>
+          <tr><td>Fort Myers Location Page</td><td><span class="badge red">Missing</span></td><td>Primary business address has no dedicated page</td></tr>
+          <tr><td>Copier Leasing Fort Myers</td><td><span class="badge red">Missing</span></td><td>High-intent local transactional term</td></tr>
+          <tr><td>Printer Repair Fort Myers</td><td><span class="badge red">Missing</span></td><td>Commercial term; competitors targeting it</td></tr>
+          <tr><td>Xerox Versalink / Altalink Comparison</td><td><span class="badge red">Missing</span></td><td>Buyer-research content gap</td></tr>
+          <tr><td>Print Assessment / ROI Calculator</td><td><span class="badge red">Missing</span></td><td>Lead generation tool; differentiates MPS offer</td></tr>
+        </tbody>
+      </table>
+      <!-- /EDIT -->
+    </div>
+  </div>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <!-- EDIT: Blog/publishing status. big-stat danger if no blog or off-domain blog. -->
+      <div class="card-label"><span class="dot amber"></span> Blog / Content Publishing</div>
+      <div class="big-stat sm warning" style="margin-bottom:0.5rem">Active</div>
+      <div class="stat-sub" style="margin-bottom:1rem">Blog lives on the main domain at sosxrx.com. However, the site has published approximately <strong>150+ blog-style posts</strong> and 94% of those pages are flagged for thin content &mdash; meaning content quantity has been prioritized over content depth. Posts average very low word counts and compete with each other for overlapping local keywords.</div>
+      <div style="background:var(--amber-light);border-radius:8px;padding:1rem;font-size:0.82rem">
+        <strong style="color:var(--amber)">Content quality gap:</strong> SWFL publishes consistently, but the low text-to-HTML ratio across 210 pages means Google isn&rsquo;t finding enough substance to rank them for meaningful terms. Quality, depth, and keyword focus need to replace quantity.
+      </div>
+      <!-- /EDIT -->
+    </div>
+    <div class="card">
+      <!-- EDIT: Missing content opportunities. REPEAT <li> per topic with volume + current rank. -->
+      <div class="card-label"><span class="dot red"></span> Missing Content Opportunities</div>
+      <p style="font-size:0.85rem;color:var(--text);margin-bottom:1rem">These are high-priority content topics sosxrx.com currently ranks <strong style="color:var(--red)">outside page 1</strong> or not at all for, despite being core to the Xerox dealer and managed print buyer journey:</p>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem">
+        <li style="font-size:0.82rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--red);font-weight:700">&rarr;</span><strong>Managed print services fort myers</strong> &mdash; 50/mo, KD 6; competitors rank, SWFL at #3</li>
+        <li style="font-size:0.82rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--red);font-weight:700">&rarr;</span><strong>Xerox managed print services near me</strong> &mdash; 140/mo; SWFL at #15, needs content depth</li>
+        <li style="font-size:0.82rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--red);font-weight:700">&rarr;</span><strong>Output management services</strong> &mdash; 140/mo, KD 10; not ranking at all</li>
+        <li style="font-size:0.82rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--red);font-weight:700">&rarr;</span><strong>Copier leasing fort myers fl</strong> &mdash; transactional; no dedicated optimized page exists</li>
+        <li style="font-size:0.82rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--red);font-weight:700">&rarr;</span><strong>Xerox versalink printers near me</strong> &mdash; 40/mo; SWFL at #11, one page update away from page 1</li>
+        <li style="font-size:0.82rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--red);font-weight:700">&rarr;</span><strong>Printer leasing southwest florida</strong> &mdash; regional commercial term with zero current coverage</li>
+      </ul>
+      <!-- /EDIT -->
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+<!-- ===== SECTION 04: LOCAL SEO ===== -->
+<section>
+  <div class="section-header">
+    <div class="section-number">04</div>
+    <h2 class="section-title">Local SEO &amp; Online Presence</h2>
+  </div>
+
+  <div class="card-grid cols-4" style="margin-bottom:1rem">
+    <div class="card">
+      <!-- NAP: tokenize the 5 fields. Conflict box is EDIT (remove if no NAP conflict). -->
+      <div class="card-label"><span class="dot red"></span> NAP Audit</div>
+      <div style="font-size:0.82rem;line-height:1.8">
+        <div><strong>Name:</strong> SWFL Office Solutions</div>
+        <div><strong>Address:</strong> 13723 Jetport Commerce Pkwy #13</div>
+        <div><strong>City:</strong> Fort Myers, FL 33913</div>
+        <div><strong>Phone:</strong> (239) 529-6074</div>
+        <div><strong>URL:</strong> www.sosxrx.com</div>
+      </div>
+      <!-- EDIT: NAP conflict callout — delete this block if there is no conflict -->
+      <div style="margin-top:0.75rem;background:var(--red-light);border-radius:6px;padding:0.5rem;font-size:0.75rem;color:var(--red)">
+        <strong>Name Conflict &mdash; EZlocal, ShowMeLocal, YP.com, HotFrog:</strong> Listing business as &ldquo;Naples Office Solutions, LLC&rdquo; instead of &ldquo;SWFL Office Solutions&rdquo; &mdash; HotFrog also shows wrong address: 3449 Technology Drive STE 109 (Sarasota)
+      </div>
+      <!-- /EDIT -->
+    </div>
+    <div class="card">
+      <!-- EDIT: Google Reviews. If GBP unverified use big-stat warning "Not Verified"; else show rating + count. -->
+      <div class="card-label"><span class="dot amber"></span> Google Reviews</div>
+      <div class="big-stat warning" style="font-size:2rem">5.0 &#9733;</div>
+      <div class="stat-sub">2 Google reviews &mdash; review volume critically thin</div>
+      <div style="margin-top:0.75rem;font-size:0.78rem;color:var(--muted)">
+        Perfect rating, but with only 2 reviews, buyers researching &ldquo;xerox dealer fort myers&rdquo; can&rsquo;t trust the score. Competitors with 20&ndash;50+ reviews will win the click even with lower ratings.
+      </div>
+      <!-- /EDIT -->
+    </div>
+    <div class="card">
+      <!-- EDIT: Online presence rating (POOR/FAIR/GOOD) + active/issues/missing breakdown -->
+      <div class="card-label"><span class="dot red"></span> Online Presence</div>
+      <div class="big-stat sm danger">POOR</div>
+      <div class="stat-sub">5 of 20+ directories active &mdash; name inconsistency across 4 key listings</div>
+      <div style="margin-top:0.75rem">
+        <div style="font-size:0.78rem;color:var(--text)">Active: <strong style="color:var(--green)">Cylex &check; &nbsp; Where To? &check; &nbsp; YP.com &check;</strong></div>
+        <div style="font-size:0.78rem;color:var(--text)">Issues: <strong style="color:var(--amber)">EZlocal (wrong name) &nbsp; HotFrog (wrong name + address)</strong></div>
+        <div style="font-size:0.78rem;color:var(--text)">Missing: <strong style="color:var(--red)">Facebook, Bing, USCity.net, TripAdvisor, YellowPages + 11 more</strong></div>
+      </div>
+      <!-- /EDIT -->
+    </div>
+    <div class="card">
+      <!-- EDIT: Key listing status. badge green/amber/red per listing. REPEAT row per directory. -->
+      <div class="card-label"><span class="dot amber"></span> Key Listing Status</div>
+      <div style="font-size:0.82rem;line-height:2">
+        <div style="display:flex;justify-content:space-between"><span>Google Business Profile</span><span class="badge green">Verified</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Bing Places</span><span class="badge red">Not Present</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Facebook</span><span class="badge red">Not Present</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Apple Maps</span><span class="badge amber">Unavailable</span></div>
+        <div style="display:flex;justify-content:space-between"><span>EZlocal</span><span class="badge amber">Wrong Name</span></div>
+        <div style="display:flex;justify-content:space-between"><span>HotFrog</span><span class="badge red">Wrong Name + Address</span></div>
+        <div style="display:flex;justify-content:space-between"><span>YP.com</span><span class="badge amber">Wrong Name</span></div>
+      </div>
+      <!-- /EDIT -->
+    </div>
+  </div>
+
+  <div class="card span-4" style="background:var(--charcoal);border-radius:10px;padding:2rem;border:none">
+    <!-- EDIT: "The Local SEO Problem, in One Paragraph" — fully client-specific narrative. -->
+    <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:0.75rem">The Local SEO Problem, in One Paragraph</div>
+    <p style="font-size:1rem;color:var(--white);line-height:1.7">
+      When a business owner in Fort Myers, Naples, or Sarasota searches for &ldquo;xerox authorized dealer near me&rdquo; or &ldquo;managed print services fort myers,&rdquo; Google cross-references the GBP listing, the website, and citations across the web. Right now, that picture is inconsistent: <strong style="color:rgba(255,200,100,1)">4 directory listings show SWFL Office Solutions under the name &ldquo;Naples Office Solutions, LLC,&rdquo;</strong> HotFrog lists a completely different Sarasota address, and Bing Places &mdash; the second most used local search platform &mdash; has no listing at all. Every discrepancy reduces Google&rsquo;s confidence in the business&rsquo;s legitimacy, suppressing pack rankings. Meanwhile, SWFL holds only 2 Google reviews despite years of service &mdash; a gap that pushes buyers directly toward competitors with social proof.
+    </p>
+    <!-- /EDIT -->
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+<!-- ===== SECTION 05: COMPETITOR KEYWORD GAP ===== -->
+<section>
+  <div class="section-header">
+    <div class="section-number">05</div>
+    <h2 class="section-title">Competitor Keyword Gap</h2>
+  </div>
+
+  <!-- EDIT: gap-hero 3 numbers — make the gap visceral. This section is the emotional core. -->
+  <div class="gap-hero">
+    <div class="gap-hero-card">
+      <div class="number" style="color:var(--red)">4,817+</div>
+      <div class="label">Keyword Gap vs. Leader</div>
+      <div class="sub">Keywords where Novatech ranks that SWFL does not</div>
+    </div>
+    <div class="gap-hero-card">
+      <div class="number" style="color:var(--maroon)">97&times;</div>
+      <div class="label">Traffic Gap</div>
+      <div class="sub">Novatech captures 4,695 visits/mo vs. SWFL&rsquo;s 48</div>
+    </div>
+    <div class="gap-hero-card">
+      <div class="number" style="color:var(--amber)">8 vs. 29</div>
+      <div class="label">Authority Score Gap</div>
+      <div class="sub">SWFL&rsquo;s domain authority is 3.6&times; lower than the market leader</div>
+    </div>
+  </div>
+  <!-- /EDIT -->
+
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+    <div class="card">
+      <!-- EDIT: "What This Means" narrative — name the REAL competitors and the revenue stakes. -->
+      <div class="card-label"><span class="dot red"></span> What This Means for SWFL</div>
+      <p style="font-size:0.9rem;margin-bottom:0.75rem">The true competitive set in the Southwest Florida managed print market isn&rsquo;t just local dealers. Novatech &mdash; a national managed print and IT services provider with 30 locations &mdash; has built a massive content footprint (5,122 keywords) and is pulling in nearly <strong>5,000 monthly organic visitors</strong> from the exact same search terms SWFL should own.</p>
+      <p style="font-size:0.9rem;margin-bottom:0.75rem">SWFL holds real advantages: Xerox authorized dealer status, deep local roots, and proven service quality. But those advantages don&rsquo;t show up in Google searches for &ldquo;managed print services fort myers&rdquo; or &ldquo;copier leasing naples fl.&rdquo; <strong style="color:var(--red)">Novatech does.</strong></p>
+      <p style="font-size:0.9rem">Every month without a content strategy is another month Novatech collects the leads that should be going to SWFL&rsquo;s phone.</p>
+      <!-- /EDIT -->
+    </div>
+    <div class="card">
+      <!-- EDIT: rank-bars. winner (green) = top competitor, neutral = mid, loser (red) = CLIENT last. REPEAT rank-bar per competitor. -->
+      <div class="card-label"><span class="dot red"></span> Authority Score by Competitor</div>
+      <div style="font-size:0.75rem;color:var(--muted);margin-bottom:0.75rem">Domain authority — Semrush Authority Score (0&ndash;100)</div>
+      <div class="rank-bar winner"><span class="name"><strong>Novatech.net</strong></span><span class="score" style="color:var(--green)">29</span></div>
+      <div class="rank-bar neutral"><span class="name">ManagedPrint.com</span><span class="score" style="color:var(--text)">23</span></div>
+      <div class="rank-bar neutral"><span class="name">CopyConceptsInc.com</span><span class="score" style="color:var(--text)">12</span></div>
+      <div class="rank-bar neutral"><span class="name">JMTodd.com</span><span class="score" style="color:var(--text)">9</span></div>
+      <div class="rank-bar loser"><span class="name"><strong>sosxrx.com (SWFL)</strong></span><span class="score" style="color:var(--red)">8</span></div>
+      <p style="font-size:0.75rem;color:var(--muted);margin-top:0.75rem">Authority Score reflects backlink quality and volume. Building domain authority through content and earned links is a 6&ndash;12 month investment &mdash; starting now compounds faster.</p>
+      <!-- /EDIT -->
+    </div>
+  </div>
+
+  <div class="card span-4">
+    <!-- EDIT: Competitive landscape table + share bar. CLIENT row uses class="highlight". REPEAT <tr> per domain; share-bar segments sum to 100%. -->
+    <div class="card-label"><span class="dot amber"></span> Competitive Landscape &mdash; Managed Print / Xerox Dealer Market</div>
+    <table style="margin-bottom:0.75rem">
+      <thead><tr><th>Domain</th><th>Auth. Score</th><th>Traffic/mo</th><th>Keywords</th><th>Backlinks</th><th>Ref. Domains</th><th>Traffic Share</th></tr></thead>
+      <tbody>
+        <tr><td><strong>novatech.net</strong></td><td>29</td><td>4,695</td><td>5,122</td><td>19,989</td><td>1,696</td><td>90.5%</td></tr>
+        <tr><td>managedprint.com</td><td>23</td><td>315</td><td>1,492</td><td>179,370</td><td>629</td><td>6.1%</td></tr>
+        <tr><td>jmtodd.com</td><td>9</td><td>130</td><td>38</td><td>856</td><td>270</td><td>2.5%</td></tr>
+        <tr class="highlight"><td><strong>sosxrx.com (SWFL)</strong></td><td style="color:var(--red);font-weight:700">8</td><td style="color:var(--red);font-weight:700">48</td><td>305</td><td>566</td><td>178</td><td style="color:var(--red);font-weight:700">0.9%</td></tr>
+        <tr><td>copyconceptsinc.com</td><td>12</td><td>0</td><td>29</td><td>313</td><td>151</td><td>0%</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-bottom:0.5rem;font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)">Cluster Traffic Share</div>
+    <div class="share-bar">
+      <div style="width:90.5%;background:var(--maroon)">Novatech 90.5%</div>
+      <div style="width:6.1%;background:#555">ManagedPrint 6.1%</div>
+      <div style="width:3.4%;background:#888">Others 3.4%</div>
+    </div>
+    <p style="font-size:0.75rem;color:var(--muted);margin-top:0.5rem">SWFL captures less than 1% of competitive digital traffic despite holding a #1 Xerox authorized dealer position and serving 7+ Southwest Florida markets. Data via Semrush, June 2026.</p>
+    <!-- /EDIT -->
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+<!-- ===== SECTION 06: TOP KEYWORD OPPORTUNITIES =====
+     NOTE: Magnus used this slot for keyword opportunities. If backlinks are the bigger story for a
+     client, rebuild this as a Backlink Profile section (total backlinks, ref domains, toxic links,
+     toxic-link table, competitor authority rank-bars) per the project instructions. -->
+<section>
+  <div class="section-header">
+    <div class="section-number">06</div>
+    <h2 class="section-title">Top Keyword Opportunities</h2>
+  </div>
+
+  <!-- EDIT: intro framing -->
+  <p style="font-size:0.9rem;color:var(--text);max-width:780px;margin-bottom:2rem">SWFL holds #1 rankings for multiple Sarasota and Naples-area terms &mdash; but those keywords average just 40&ndash;50 searches per month. The real opportunity is the broader Southwest Florida managed print and copier leasing market, where 49 of SWFL&rsquo;s current keywords sit in positions 11&ndash;20, one content push away from page 1, and where several high-value terms have no SWFL page at all.</p>
+  <!-- /EDIT -->
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <!-- EDIT: keyword-gap table. Priority badge red=Critical, amber=High, green=Medium. REPEAT <tr> per keyword. -->
+      <div class="card-label"><span class="dot red"></span> Top Keyword Opportunities &mdash; Gaps &amp; Near-Misses</div>
+      <table>
+        <thead><tr><th>Keyword</th><th>Volume</th><th>SWFL Pos.</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td>output management services</td><td>140</td><td style="color:var(--red)">Not ranking</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>xerox managed print services near me</td><td>140</td><td style="color:var(--red)">#15</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>xerox printer management software near me</td><td>110</td><td style="color:var(--red)">#48</td><td><span class="badge red">Critical</span></td></tr>
+          <tr><td>managed print services fort myers</td><td>50</td><td style="color:var(--amber)">#3</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>copier leasing fort myers fl</td><td>Est. 50</td><td style="color:var(--red)">Not ranking</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>xerox versalink printers near me</td><td>40</td><td style="color:var(--amber)">#11</td><td><span class="badge amber">High</span></td></tr>
+          <tr><td>managed print services orlando</td><td>50</td><td style="color:var(--green)">#8</td><td><span class="badge green">Medium</span></td></tr>
+          <tr><td>printer leasing southwest florida</td><td>Est. 50</td><td style="color:var(--red)">Not ranking</td><td><span class="badge amber">High</span></td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.78rem;color:var(--muted);margin-top:0.5rem">49 SWFL keywords currently rank positions 11&ndash;20. A targeted content build could move a meaningful portion of those to page 1 within 90 days.</p>
+      <!-- /EDIT -->
+    </div>
+    <div class="card">
+      <!-- EDIT: page-to-keyword map. REPEAT <tr> per recommended new page. -->
+      <div class="card-label"><span class="dot amber"></span> Page-to-Keyword Map: New Pages Needed</div>
+      <p style="font-size:0.85rem;color:var(--text);margin-bottom:1rem">Building these pages on sosxrx.com would directly target the highest-priority local commercial searches and close the gap on key near-miss terms:</p>
+      <table>
+        <thead><tr><th>New Page</th><th>Target Keyword Cluster</th><th>Est. Monthly Searches</th></tr></thead>
+        <tbody>
+          <tr><td>/fort-myers-office/</td><td>managed print services fort myers, copier lease fort myers</td><td>100+</td></tr>
+          <tr><td>/managed-print-services/</td><td>output management services, managed print near me</td><td>280+</td></tr>
+          <tr><td>/copier-leasing/</td><td>copier leasing SWFL, printer leasing southwest florida</td><td>100+</td></tr>
+          <tr><td>/xerox-versalink/</td><td>xerox versalink printers near me, versalink b series</td><td>80+</td></tr>
+          <tr><td>/xerox-altalink/</td><td>xerox altalink dealer, multifunction copier naples</td><td>60+</td></tr>
+          <tr><td>Blog: MPS ROI Guide</td><td>managed print ROI, print cost reduction</td><td>Compounding</td></tr>
+        </tbody>
+      </table>
+      <div style="margin-top:0.75rem;background:var(--amber-light);border-radius:6px;padding:0.75rem;font-size:0.8rem;color:var(--amber)">
+        <strong>The math:</strong> Adding just 200 monthly organic visitors at a 5% lead conversion means 10 new inquiries/month from people actively searching for exactly what SWFL provides.
+      </div>
+      <!-- /EDIT -->
+    </div>
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+<!-- ===== SECTION 07: HOW ABSTRAKT CLOSES THE GAP ===== -->
+<section>
+  <div class="section-header">
+    <div class="section-number">07</div>
+    <h2 class="section-title">How Abstrakt Closes the Gap</h2>
+  </div>
+
+  <!-- EDIT: intro tying client's strengths to the 3-program fix -->
+  <p style="font-size:0.95rem;color:var(--text);max-width:860px;margin-bottom:2rem;line-height:1.7">
+    SWFL Office Solutions has the credentials that local businesses covet: Xerox authorized dealer status, on-site service capability across Southwest Florida, and an A-grade website that loads fast. What&rsquo;s missing is the content depth that makes those strengths discoverable. Abstrakt closes that gap with a focused SEO Content Program &mdash; no rebuild required, just systematic content and local authority work that compounds month over month.
+  </p>
+  <!-- /EDIT -->
+
+  <div class="plan-grid">
+
+    <div class="plan-card">
+      <div class="plan-card-header">
+        <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:900;color:white;flex-shrink:0">1</div>
+        <span class="step-title">New Website</span>
+      </div>
+      <div class="plan-card-body">
+        <!-- EDIT: tailor the intro + bullets to THIS client's technical gaps. -->
+        <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem">210 of 223 pages are flagged for thin content. The site has quantity but not depth. Abstrakt&rsquo;s content program replaces thin placeholder content with substantive, keyword-targeted pages that search engines can rank and buyers can act on.</p>
+        <h4>What we build</h4>
+        <ul>
+          <li>3,000&ndash;4,000 words/month of local SEO content, each piece targeting a priority keyword cluster</li>
+          <li>Dedicated Fort Myers location page with proper H1 and service coverage</li>
+          <li>Expanded managed print, copier leasing, and Xerox product pages with depth</li>
+          <li>Title tag optimization across 39 flagged pages &mdash; fix keyword dilution</li>
+          <li>HTTP &rarr; HTTPS internal link correction (22 flagged links)</li>
+          <li>llms.txt creation for AI search engine visibility</li>
+          <li>Schema markup audit and implementation for LocalBusiness + Service types</li>
+        </ul>
+        <div class="callout">Content is the only lever that moves all 8 health sub-scores simultaneously.</div>
+        <!-- /EDIT -->
+      </div>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-card-header">
+        <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:900;color:white;flex-shrink:0">2</div>
+        <span class="step-title">Organic SEO</span>
+      </div>
+      <div class="plan-card-body">
+        <!-- EDIT: tailor to client's authority score, keyword count, local fixes (citation count, city pages). -->
+        <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem">SWFL has an Authority Score of 8 &mdash; 3.6&times; below the market leader &mdash; and critical NAP inconsistencies across 4+ directories. The local presence cleanup runs in parallel with content to reinforce Google&rsquo;s confidence in the business location and legitimacy.</p>
+        <h4>What we do</h4>
+        <ul>
+          <li>NAP normalization: correct &ldquo;Naples Office Solutions, LLC&rdquo; to &ldquo;SWFL Office Solutions&rdquo; across all listings</li>
+          <li>Fix HotFrog wrong address (Sarasota location showing instead of Fort Myers)</li>
+          <li>Bing Places and Facebook listings created from scratch</li>
+          <li>15+ new directory submissions: YellowPagesDirectory, n49, GoLocal247, TripAdvisor, Tupalo + more</li>
+          <li>GBP optimization: categories, services, attributes, photo cadence</li>
+          <li>Review generation strategy: 2 &rarr; 25+ verified GBP reviews over 12 months</li>
+          <li>Monthly site health monitoring and technical cleanup</li>
+        </ul>
+        <div class="callout">Local authority compounds: every fixed citation builds more confidence in the Google local pack algorithm.</div>
+        <!-- /EDIT -->
+      </div>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-card-header">
+        <div style="width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:900;color:white;flex-shrink:0">3</div>
+        <span class="step-title">Paid Media</span>
+      </div>
+      <div class="plan-card-body">
+        <!-- EDIT: high-intent keyword table (volume + CPC from Semrush for THIS market) + geo-targeting callout. REPEAT <tr> per keyword. -->
+        <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.75rem">The managed print and copier market is highly local &mdash; buyers search for a vendor, call, and sign within weeks. Paid search gives SWFL immediate page 1 placement for high-intent terms while organic authority builds. At a $150&ndash;$500/month copier lease deal, a single new customer from ads pays for the campaign many times over.</p>
+        <h4>High-intent local keywords</h4>
+        <table style="margin-bottom:0.75rem">
+          <thead><tr><th>Keyword</th><th>Vol</th><th>Est. CPC</th></tr></thead>
+          <tbody>
+            <tr><td>managed print services fort myers</td><td>50</td><td>$18.90</td></tr>
+            <tr><td>copier leasing naples fl</td><td>Est. 50</td><td>Est. $15</td></tr>
+            <tr><td>xerox dealer fort myers</td><td>Est. 40</td><td>Est. $12</td></tr>
+            <tr><td>office printer repair naples</td><td>40</td><td>Est. $10</td></tr>
+            <tr><td>managed print services sarasota</td><td>50</td><td>Est. $14</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>WhatConverts call tracking to attribute every lead to its keyword source</li>
+          <li>ClickCease fraud protection to protect ad spend</li>
+          <li>Geo-targeting: Fort Myers, Naples, Sarasota, Bradenton, Cape Coral service radius</li>
+        </ul>
+        <div class="callout">Starter Paid Media ($1,250/mo) gets page 1 placement before organic rankings compound.</div>
+        <!-- /EDIT -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="full-divider"></div>
+
+<!-- ===== SECTION 08: RECOMMENDED SOLUTION ===== -->
+<section>
+  <div class="section-header">
+    <div class="section-number">08</div>
+    <h2 class="section-title">Recommended Solution</h2>
+  </div>
+
+  <div class="card-grid cols-2" style="margin-bottom:1rem">
+
+    <div class="card" style="border:2px solid var(--maroon);position:relative;padding-top:2.5rem">
+      <div style="position:absolute;top:0;left:1.5rem;background:var(--maroon);color:var(--white);font-size:0.65rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.25rem 0.75rem;border-radius:0 0 6px 6px">Recommended</div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1.25rem">
+        <div>
+          <div style="font-size:1.3rem;font-weight:800;color:var(--charcoal)">SEO Content Program</div>
+          <div style="font-size:0.8rem;color:var(--muted)">Local SEO + Content + Hosting &amp; Maintenance</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:1.8rem;font-weight:900;color:var(--maroon)">$2,250/month</div>
+          <div style="font-size:0.72rem;color:var(--muted)">/month</div>
+        </div>
+      </div>
+      <!-- EDIT: 8-10 deliverables in 2-col grid. Customize to client gaps (add "Toxic backlink disavow", "Multi-location NAP consolidation", etc. where relevant). -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;margin-bottom:1rem">
+        <div style="font-size:0.8rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> 3,000&ndash;4,000 words/month of local SEO content</div>
+        <div style="font-size:0.8rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Fort Myers &amp; SWFL geo-targeted landing pages</div>
+        <div style="font-size:0.8rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Title tag optimization (39 flagged pages)</div>
+        <div style="font-size:0.8rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> NAP consolidation across 15+ directories</div>
+        <div style="font-size:0.8rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> GBP optimization &amp; review generation program</div>
+        <div style="font-size:0.8rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> HTTP &rarr; HTTPS internal link correction</div>
+        <div style="font-size:0.8rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> llms.txt creation for AI search visibility</div>
+        <div style="font-size:0.8rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Monthly site health monitoring &amp; reporting</div>
+        <div style="font-size:0.8rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Hosting &amp; WordPress maintenance</div>
+        <div style="font-size:0.8rem;padding-left:1rem;position:relative"><span style="position:absolute;left:0;color:var(--green);font-weight:700">&check;</span> Keyword rank tracking &amp; monthly strategy review</div>
+      </div>
+      <div style="background:var(--light-gray);border-radius:6px;padding:0.75rem;font-size:0.78rem;color:var(--text)">
+        The site is technically sound &mdash; no rebuild needed. Every dollar goes toward content and local authority, which are the only two gaps standing between SWFL and the leads Novatech is currently capturing.
+      </div>
+      <!-- /EDIT -->
+    </div>
+
+    <div class="card">
+      <!-- EDIT: "Why This Fits [CLIENT]" — 4 reasons tied to the client's own data. Close with 12-month targets. -->
+      <div style="font-size:1rem;font-weight:800;color:var(--charcoal);margin-bottom:1.25rem">Why This Fits SWFL Office Solutions</div>
+
+      <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:1.25rem">
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--maroon)">1. The site is already fast &mdash; content is the only missing piece</div>
+          <div style="font-size:0.82rem;color:var(--text)">GTmetrix Grade A with 93% performance and 99% structure means there&rsquo;s no technical rebuild cost here. Every program dollar goes straight to content and local authority &mdash; the two specific gaps suppressing SWFL&rsquo;s rankings.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--maroon)">2. Xerox dealer status is a ranking signal competitors can&rsquo;t replicate</div>
+          <div style="font-size:0.82rem;color:var(--text)">Being an authorized Xerox dealer is a credibility signal in both Google&rsquo;s eyes and buyers&rsquo; eyes. Content built around that status &mdash; &ldquo;authorized xerox dealer fort myers,&rdquo; &ldquo;xerox managed print near me&rdquo; &mdash; targets terms with real purchase intent and low competition.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--maroon)">3. The keyword difficulty numbers are favorable</div>
+          <div style="font-size:0.82rem;color:var(--text)">Most priority local terms have keyword difficulty scores of 0&ndash;10. That means quality content from a verified local business can rank within weeks, not months. The managed print services fort myers keyword has a KD of 6 &mdash; genuinely winnable fast.</div>
+        </div>
+        <div>
+          <div style="font-size:0.85rem;font-weight:700;color:var(--maroon)">4. 49 keywords are already on page 2 &mdash; one push to page 1</div>
+          <div style="font-size:0.82rem;color:var(--text)">SWFL currently ranks positions 11&ndash;20 for 49 keywords. A targeted content update on the pages those keywords are attached to can push a meaningful number to page 1 in 60&ndash;90 days &mdash; visibility that translates directly to calls and form fills.</div>
+        </div>
+      </div>
+
+      <!-- 12-month targets: X &rarr; Y for keywords, traffic, authority, reviews -->
+      <div style="background:var(--green-light);border-radius:8px;padding:1rem;border:1px solid var(--green)">
+        <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--green);margin-bottom:0.75rem">What success looks like &mdash; 12-month targets</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;font-size:0.85rem">
+          <div><span style="color:var(--muted)">Organic Keywords:</span></div>
+          <div><strong>305 &rarr; 600+</strong></div>
+          <div><span style="color:var(--muted)">Organic Traffic:</span></div>
+          <div><strong>48/mo &rarr; 250+/mo</strong></div>
+          <div><span style="color:var(--muted)">Top-3 Rankings:</span></div>
+          <div><strong>33 &rarr; 80+</strong></div>
+          <div><span style="color:var(--muted)">Google Reviews:</span></div>
+          <div><strong>2 &rarr; 25+</strong></div>
+        </div>
+      </div>
+      <!-- /EDIT -->
+    </div>
+
+  </div>
+
+  <!-- Outbound upsell — fixed AMG copy except client name + rep count + deal economics. -->
+  <div style="background:var(--charcoal);border-radius:10px;padding:2rem;margin-top:1rem">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center">
+      <div>
+        <div style="font-size:1.1rem;font-weight:800;color:var(--white);margin-bottom:0.5rem">Need help converting inbound leads into closed deals?</div>
+        <!-- EDIT: keep the 2.1x stat; adjust client name / deal economics -->
+        <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.6">Abstrakt also offers outbound appointment setting &mdash; our teams engage, qualify, and hand off leads directly to SWFL&rsquo;s sales team. Partners who combine inbound SEO with outbound follow-up average a <strong style="color:rgba(255,200,100,1)">2.1&times; increase in deal size</strong>. In a market where a single managed print contract runs $150&ndash;$500/month for years, outbound reach-out to Fort Myers and Naples businesses is a high-leverage play alongside the organic program.</p>
+        <!-- /EDIT -->
+      </div>
+      <div style="display:flex;gap:2rem;flex-shrink:0">
+        <div style="text-align:center">
+          <div style="font-size:2rem;font-weight:900;color:var(--white)">3.55x</div>
+          <div style="font-size:0.65rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em">Average ROI</div>
+        </div>
+        <div style="text-align:center">
+          <div style="font-size:2rem;font-weight:900;color:var(--white)">2.1x</div>
+          <div style="font-size:0.65rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em">Deal Size Increase</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer style="background:var(--maroon);padding:4rem 3rem;text-align:center">
+  <div style="max-width:800px;margin:0 auto">
+    <!-- EDIT: closing headline specific to client's market -->
+    <div style="font-size:1.8rem;font-weight:800;color:var(--white);line-height:1.3;margin-bottom:0.75rem">
+      SWFL Office Solutions holds a #1 Xerox dealer ranking in Southwest Florida. The missing piece is making sure local buyers can find it.
+    </div>
+    <!-- /EDIT -->
+    <div style="font-size:1.1rem;color:rgba(255,255,255,0.8);margin-bottom:2rem">
+      The question is whether <strong>SWFL Office Solutions</strong> will be one of them.
+    </div>
+    <a href="https://abstraktmg.com/contact" style="display:inline-block;background:var(--white);color:var(--maroon);font-weight:700;font-size:0.9rem;padding:0.85rem 2.5rem;border-radius:6px;text-decoration:none;letter-spacing:0.04em;text-transform:uppercase">Get Started &rarr; abstraktmg.com/contact</a>
+    <div style="margin:2.5rem auto 1rem">
+      <div class="amg-logo" style="width:140px;height:38px;margin:0 auto;opacity:0.5"></div>
+    </div>
+    <div style="font-size:0.75rem;color:rgba(255,255,255,0.35);letter-spacing:0.04em">
+      Prepared by Abstrakt Marketing Group &middot; June 2026 &middot; Confidential
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
